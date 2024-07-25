@@ -1,0 +1,15 @@
+name: Hola Mundo con GitHub Actions
+run-name: ¡Estoy usando GitHub Actions!
+
+on: [push]
+
+jobs:
+  hola-mundo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Usuario
+        run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
+      - name: Script
+        run: node hola-mundo.js
