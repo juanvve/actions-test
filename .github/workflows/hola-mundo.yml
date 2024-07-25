@@ -10,6 +10,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Usuario y Datos
-        run:  echo "USERNAME=${{ github.actor }}" "WORKFLOW=${{ github.workflow }}" >> $GITHUB_ENV
+        run:  echo "WORKFLOW=${{ github.workflow }}" >> $GITHUB_ENV
       - name: Script Corriendo
         run: node hola-mundo.js
