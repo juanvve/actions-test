@@ -1,9 +1,11 @@
 var nombre
+var flow
 
 function holaMundo() {
   const nombre = process.env.USERNAME;
-  console.log(process.env)
+  const flow = process.env.WORKFLOW;
   console.log(`¡Hola, ${nombre} desde GitHub Actions!`);
+  console.log(`Estoy corriendo ${flow}`);
 }
 
 holaMundo();
