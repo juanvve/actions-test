@@ -1,5 +1,5 @@
 name: Hola Mundo con GitHub Actions
-run-name: ¡Estoy usando GitHub Actions!
+run-name: ¡Estoy usando GitHub Actions - 1!
 
 on: [push]
 
