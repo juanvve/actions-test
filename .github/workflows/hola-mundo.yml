@@ -1,5 +1,5 @@
 name: Hola Mundo con GitHub Actions
-run-name: ¡Estoy usando GitHub Actions!
+run-name: ¡Estoy usando GitHub Actions - 1!
 
 on: [push]
 
@@ -9,7 +9,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Usuario
-        run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
-      - name: Script
+      - name: Nombre de Usuario
+        run:  echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
+      - name: Nombre del Workflow
+        run:  echo "WORKFLOW=${{ github.workflow }}" >> $GITHUB_ENV
+      - name: Script Corriendo
         run: node hola-mundo.js
