@@ -12,6 +12,9 @@ on:
         required: true
         default: 'Juan'
         type: string
+
+  push:
+
 jobs:
   mayor:
     if: ${{ inputs.edad >= 18 }} 
