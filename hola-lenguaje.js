@@ -6,6 +6,7 @@ function holaLenguaje() {
   const lenfavorito = process.env.WORKFLOW;
   console.log(`¡Hola, ${nombre} desde GitHub Actions!`);
   console.log(`Estoy Usando mi Lenguaje Favorito ${lenfavorito}`);
+  console.log(process.env);
 }
 
 holaLenguaje();
